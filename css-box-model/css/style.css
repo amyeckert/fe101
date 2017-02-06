@@ -1,0 +1,39 @@
+/* * { box-sizing: border-box; }*/
+
+.content {
+	background-color: #b7aaaa;
+	background-image: none;
+	/*background-size: cover;*/
+	background-color: 
+}
+
+div {
+	z-index: 1;
+	
+}
+.copy {
+	
+	z-index: 9999999;
+	padding: 50px;
+	/*border: 5px solid rebeccapurple;*/
+	margin: 10px auto;
+	width: 800px;
+
+}
+a {
+	color: rebeccapurple;
+	text-transform: uppercase;
+	text
+}
+
+button {
+	padding: 10px;
+
+}
+@media screen and (min-width: 768px) {
+	.content {
+		background-size: cover;
+		background-image: url("../img/whanganui.jpg");
+		
+	}
+}

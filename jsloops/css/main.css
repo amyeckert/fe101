@@ -1,0 +1,10 @@
+.colorbox {
+	height: 100vh;
+	width: 100%;
+	transition: background-color 60s ease;
+	background-color: #ffd6d6;
+}
+.colorbox:hover {
+	background-color: #e7ffbf;
+
+}
