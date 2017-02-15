@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="js/main.js"></script>
 	</head>
 
 	<body>
@@ -21,6 +20,28 @@
 				<li><a href="#page-no-click">don't click here!</a></li>         
 			</ul>       
 		</nav>
+
+		<section class='sign-up'>
+
+			<h1 id='heading'>This is a form.</h1>
+
+			<form action="#" method="post" id='log-in'>
+				<p class='form-item'>
+					<label for='username'>Username</label>
+					<input type="text" name="username" id='username' value="">
+				</p>
+
+				<p class='form-item'>
+					<label for='password'>Password</label>
+					<input type="text" name="password" id='password' value="">
+				</p>		
+				<p class='form-item'>
+					<button type="submit">submit</button>
+				</p>
+
+				
+			</form>
+		</section>
 
 		<section id='page-about' class= 'is-mobile'>   
 			<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
@@ -46,6 +67,6 @@
 			<p>I told you not to click here!</p>
 			<button type=""><a href="#" class='back-to-top'>back to top</a></button> 
 		</section>
-
+		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -6,15 +6,37 @@ var OPW = OPW || {}; //checks to see if this object already exists first, if not
 
 OPW.utilities = {
 	listen: function(){
-		// attach click event to hamburger icon
+
+		//	form controls
+		var form = document.getElementById('log-in');
+		form.addEventListener('submit', function(event){
+			alert("button is clicked");
+			event.preventDefault(); //prevent form from submitting
+			var heading = document.getElementById('heading');
+
+			var items = document.getElementsByClassName('form-item')[1];
+
+			var notice = document.getElementsByClassName('sign-up');
+
+			heading.innerText = 'Thank you for submitting!';
+
+			items.innerHTML += '<p>added this</p>';
+			// items[1].innerText = 'Added this on-submit!';
+			// notice.innerHTML = '<div> updated the inner html! </div>';
+
+			console.log(items);
+
+
+		}) 
+		//	attach click event to hamburger icon
 		$('.js-menu').on('click', function(){
 			$('.nav-main').slideToggle();
 		})
-		//a js breakpoint
+		//	a js breakpoint
 		$(window).on('resize', function(){
 			// get width of window
 			var w = $(window).width();
-			console.log('resizing window now ' + w);
+			// console.log('resizing window now ' + w);
 			// if width > 420, do stuff
 			if(w > 480 && $('.nav-main').is(':hidden')){
 				$('.nav-main').removeAttr('style');	
@@ -23,6 +45,7 @@ OPW.utilities = {
 				// $('.nav-main').removeAttr('style');
 			}
 		});
+
 	},
 } //End OPW
 

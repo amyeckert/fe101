@@ -96,7 +96,7 @@ cam3.takePhoto();
 
 var love = 'adrian';
 console.log(love.fontsize());
-//love.__proto__; in console will show all methods 
+// love.__proto__; in console will show all methods available
 
 
 
