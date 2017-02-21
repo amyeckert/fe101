@@ -81,7 +81,7 @@ var listPaintings = function(userId){
 		
 		for(var i = 0; i < response.result.length; i++){
 			console.log(response.result[i].image_url);
-			$('#art').append('<img src="' + response.result[i].image_url + '">');
+			$('#art').append('<div class="art-item"><img src="' + response.result[i].image_url + '"></div');
 		}
 
 	}).fail(function(response){

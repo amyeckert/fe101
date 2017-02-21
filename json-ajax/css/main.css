@@ -2,6 +2,70 @@ body {
 	width: 100%;
 	height:100vh;
 	margin: 0 auto;
-	// background-image: url("http://images.huffingtonpost.com/2012-08-18-GorillaSilverback6.jpg");
-	// background-color: pink;
+	/*background-image: url("http://images.huffingtonpost.com/2012-08-18-GorillaSilverback6.jpg");*/
+}
+.wrapper {
+	width: 50%;
+	margin: 50px auto;
+	padding: 0 50px;
+	background-color: hsla(58, 83%, 50%, 0.6);
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto 20px auto;
+	
+}
+form {
+	width: 70%;
+	margin: 0 auto;
+	font-family: 'Lora', serif;
+	font-style: italic;
+	font-size: 18px;
+	
+}
+label {
+	display: inline-block;
+	width: 40%;
+	margin: 0 10px 0 0 ;
+}
+input {
+	height: 30px;
+	width: 150px;
+	margin-bottom: 10px;
+	font-family: 'Lora', serif;
+	font-size: 20px;
+}
+button {
+ 	height: 40px;
+ 	border: 2px solid crimson;
+ 	font-family: 'Lora', serif;
+ 	text-transform: uppercase;
+ 	background-color: transparent;
+ 	font-size: 24px;
+}
+.artworks {
+	width: 100%;
+	margin: 2rem auto;
+}
+
+#art {
+	width: 100%;
+	display: -webkit-flex;
+   	display: flex;
+    -webkit-flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+
+}
+.art-item {
+	flex: 0 1 auto;
+	margin: 5px 10px;
+
+}
+img {
+	max-height: 100px;
 }
