@@ -47,13 +47,18 @@ button {
 .is-mobile {
 	display: block;
 }
+.sign-up {
+	background-color: pink;
+	width: 50%;
+	margin: 0 auto;
+}
 
 @media screen and (min-width: 480px) {
 	.is-mobile {
 		display: none;
 	}
 	body {
-		background-color: pink;
+		background-color: transparent;
 	}
 	.mav-main {
 		display: none;
