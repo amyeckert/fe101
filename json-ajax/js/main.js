@@ -37,7 +37,7 @@ $(document).ready(function(e) {
 		var title = $('#title').val();
 		var $background = $('body');
 
-		console.log(url);
+		// console.log(url);
 
 		$background.css('background-image', 'url("' + url  + '")');
 		addPainting(myId, url, title);
@@ -49,7 +49,7 @@ $(document).ready(function(e) {
 		//get user by ID
 		var userId = $('#user-id').val();
 		console.log(userId);
-		
+		∆
 		listPaintings(userId);
 
 	});

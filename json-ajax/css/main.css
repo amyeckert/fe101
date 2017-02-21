@@ -6,24 +6,28 @@ body {
 }
 .wrapper {
 	width: 50%;
-	margin: 50px auto;
-	padding: 0 50px;
+	margin: 0 auto;
+	padding: 2rem 0 ;
 	background-color: hsla(58, 83%, 50%, 0.6);
+}
+
+form {
+	width: 70%;
+	margin: 0 auto;
+	padding: 1rem 0;
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	/*border-top: 2px solid black;*/
+	
 }
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 50px;
-	width: 100%;
-	text-align: center;
-	margin: 0 auto 20px auto;
-	
-}
-form {
-	width: 70%;
-	margin: 0 auto;
-	font-family: 'Lora', serif;
 	font-style: italic;
-	font-size: 18px;
+	width: 100%;
+	margin-top: 2rem;
+	text-align: left;
+	margin: 0 auto 20px auto;
 	
 }
 label {
@@ -37,14 +41,19 @@ input {
 	margin-bottom: 10px;
 	font-family: 'Lora', serif;
 	font-size: 20px;
+	
 }
 button {
  	height: 40px;
- 	border: 2px solid crimson;
+ 	border: 2px solid black;
  	font-family: 'Lora', serif;
  	text-transform: uppercase;
  	background-color: transparent;
  	font-size: 24px;
+}
+button:hover {
+	background-color: black;
+	color: white;
 }
 .artworks {
 	width: 100%;
