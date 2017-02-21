@@ -1,7 +1,8 @@
 //namespacing! store all functions, objects, etc inside one BIG object, so no conflicts with other libraries or code.
 // One Page Website OPW, can be ALLCAPS for a Global object. Easier to read
 
-// 1. 
+// 1. OPW is acronym for One Page Website. This is typical naming convention
+
 var OPW = OPW || {}; //checks to see if this object already exists first, if not, create new object. If var OPW = 'foo'; existed, it would be overriden !
 
 OPW.utilities = {
