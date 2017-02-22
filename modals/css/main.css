@@ -1,0 +1,50 @@
+
+//prevents scrolling content inthe background
+.modal-on {
+	overflow: hidden;
+}
+
+.modal-container {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(44, 95%, 50%, 0.6);
+
+
+}
+.modal {
+	background-color: hsla(44, 95%, 50%, 1);
+	width: 40%;
+	margin: 0 auto;
+	border-radius: 20px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); //centers it. 
+}
+
+.modal-header {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+
+}
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.modal-content {
+	width: 90%;
+	margin: 0 auto;
+
+}
+form {
+	width: 90%;
+	margin: 0 auto;
+}
+.form-item {
+	margin: 2%;
+}

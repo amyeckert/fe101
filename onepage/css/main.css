@@ -17,16 +17,17 @@ button {
 	width: 100%; 
 }
 .nav-main {
-	display: block;
+	display: none;
+	width: 0;
+
 }
 .nav-main li {   
 	border-bottom: 1px solid #84c980; 
 }
-
-// .nav-main li:active,
-// .nav-main li:visited {
-// 	background-color: #84c980;
-// }
+.nav-main li:active,
+.nav-main li:visited {
+	background-color: #84c980;
+}
 .nav-main li a {   
 	padding: 25px;   
 	display: block; 
@@ -39,6 +40,7 @@ button {
 }
 .nav-main li a:active {
 	color: #ffffff;
+	background-color: #84c980;
 }
 .hamburger {
 	color: #f76789;
@@ -47,12 +49,16 @@ button {
 .is-mobile {
 	display: block;
 }
+.is-current {
+	backgorund-color: hsla(174, 68%, 50% 1);
+}
 .sign-up {
-	background-color: pink;
+	background-color: hsla(34, 26%, 50% 1);
 	width: 50%;
 	margin: 0 auto;
 }
 
+//tablet
 @media screen and (min-width: 480px) {
 	.is-mobile {
 		display: none;
@@ -60,8 +66,8 @@ button {
 	body {
 		background-color: transparent;
 	}
-	.mav-main {
-		display: none;
+	.nav-main {
+		display: block;
 	} 
 	.nav-main ul {
 		border-bottom: 1px solid #84c980;
