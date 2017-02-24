@@ -45,14 +45,22 @@ showFruit(); // logs 'orange'
 console.log(fruit); //logs 'apple'
 
 
-//********** FOR loops AND IF statements DO NOT CREATE LOCAL SCOPE!
+//********** FOR loops AND IF statements DO NOT CREATE LOCAL SCOPE !
 var inBlock = false; //global
 
 for (var i = 0; i < 5; i++) {
 	var inBlock = true; // is global and changes the above var isnBlock, is NOT local
 }
-
 console.log('inBlock = ' + inBlock);
+
+// ********** unless you use LET instead of VAR:
+
+let notInBlock = false;
+
+for (var i = 0; i < 5; i++) {
+	let notInBlock = true; // is now global
+}
+console.log('notInBlock = ' + notInBlock);
 
 
 
