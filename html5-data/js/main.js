@@ -2,9 +2,9 @@ $(document).ready(function(){
 
 	// set new data-attributes directly on the html element
 	//changes do NOT update the DOM
-	$('.snake').data('feet', 'none');
-	var mySnakeObject = $('.snake').data();
-	console.log(mySnakeObject.feet);
+	$('.snake').data();
+	var mySnakeObject = $('.snake').data('error-msg');
+	console.log(mySnakeObject);
 
 
 	// multi-step js processing / game:
