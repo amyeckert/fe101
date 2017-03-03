@@ -1,0 +1,19 @@
+.slideshow-container {
+	width: 50%;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid orange;
+
+}
+.slideshow-img {
+	position: absolute;
+	width: 100%;
+	display: none;
+
+}
+.slideshow-controls {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
