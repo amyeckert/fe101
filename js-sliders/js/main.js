@@ -10,6 +10,8 @@ $(document).ready(function() {
 	console.log(slideCount);
 
 	doSlides = function(direction){
+		var direction = direction || 'next'; //sets a default to next if nothing is passed when func is called, 
+
 	 	// hide whatever current slide is
 	 	$('img').eq(currentSlideIndex).hide();
 
