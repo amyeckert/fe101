@@ -1,0 +1,167 @@
+/*https://www.w3schools.com/cssref/css_selectors.asp*/
+
+body {
+	border: 10px solid lavender;
+	font-family: Arial;
+}
+.default {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 0 auto;
+	background-color: grey;
+	opacity: 0.7;
+	border: 5px solid bisque;
+}
+/* ANIMATIONS */
+.change-width {
+	width: 250px;
+		/* property - duration - timing function - delay, multiple transitions sep by commas */
+	transition: all 0.5s ease-in-out 0.1s, background-color linear 10s ;  
+	background-color: orange;
+	/*-webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  	transition:    */     /*all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+.change-width:hover {
+	width: 500px;
+	height: 500px;
+	background-color: magenta;
+
+}
+/* define the animation and keyframes */
+@keyframes move-it {
+	0% {
+		margin-top: 0;
+		margin-left: 0;
+	}
+	30% {
+		margin-top: 20px;
+		margin-left: 50px;
+		background-color: teal;	
+	}
+	100% {
+		margin-top: 70px;
+		margin-left: 100px;
+		background-color: purple;
+	}
+}
+/* then call the animation in CSS */
+.move-this {
+	/*width: 200px;
+	height: 200px;
+	position: relative;
+	top: 0;
+	left: 0;*/
+
+	animation-name: move-it;
+	animation-duration: 4s;
+	/*Which easing/timing function to use*/   
+	animation-timing-function: linear;   
+	/*How long to wait before starting the animation*/   
+	animation-delay: 0.01s;   
+	/*how many times to run it (can be infinite)*/   
+	animation-iteration-count: infinite;   
+	/*play in reverse on alternate runs */   
+	animation-direction: alternate;   
+	/*should the animation start out running or paused */   
+	animation-play-state: paused;
+}
+/* use java script to add class to start the animation 
+.move-it.is-running {
+	animation-play-state: running;
+}
+ OR on-hover, etc. 
+.move-it:hover {
+	animation-play-state: running;
+}*/
+
+.is-running {
+	animation-play-state: running;
+}
+
+
+
+
+
+
+/* 2D TRANSFORMATIONS */
+.scale {
+	transform: scale(2, 4);
+
+}
+.translate {
+	transform: tanslate(65px, -40px);
+}
+.rotate {
+	transform: rotate(-30deg);
+
+}
+.skew {
+	transform: skewX(10deg) skewY(30deg);
+	
+}
+
+/* 3D TRANSFORMATIONS */
+
+/* top rotates forward */
+.rotatex {
+	transform: rotateX(88deg);
+}
+/* swivels on central axis */
+.rotatey {
+	transform: rotateY(-450deg);
+}
+/* rotates on z axis */
+.rotatez {
+	transform: rotateZ(25deg);
+}
+
+
+
+p {
+	font-size: 1rem;
+	display: block;
+	height: 2rem;
+
+
+}
+/* direct descendent*/
+#wrapper > p:nth-child(3),
+p.bigbird {
+	background-color: orange;	
+	color: white;
+	text-indent: 1rem;
+
+}
+[href] {
+	font-size: 2rem;
+	color: green;
+	text-decoration: none;
+}
+[data-foo] {
+	color: purple;
+}
+[href='http://apple.com'] {
+	color: yellow;
+	border: 5px solid pink;
+}
+
+div#wrapper p:last-child {
+	background-color: pink;
+}
+.foo > p:last-child {
+	border: 2px dotted blue;
+}
+.foo p:nth-child(2) {
+	border: 2px dashed black;
+}
+.container ul:last-of-type {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.container > p {
+	text-transform: uppercase; 
+}
+.container li:nth-of-type(odd) {
+	font-weight: 700;
+}
