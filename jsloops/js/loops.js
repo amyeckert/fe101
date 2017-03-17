@@ -72,3 +72,14 @@ for (var i = 0; i < names.length; i++) {
 	console.log(names[i] + ' is in my family.');
 }
 
+//********* regex breakdown:*********//
+// /^[a-z0-9]+$/i
+
+// ^         start of string
+// [a-z0-9]  a or b or c or ... z or 0 or 1 or ... 9
+// +         one or more times (change to * to allow empty string
+// $         end of string
+
+// /i        case-insensitive
+
+
