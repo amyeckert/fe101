@@ -1,5 +1,5 @@
 
-//prevents scrolling content inthe background
+/*prevents scrolling content inthe background*/
 .modal-on {
 	overflow: hidden;
 }
