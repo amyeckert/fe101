@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>AJAX calls</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="js/art-share.js"></script>
-		<script src="js/main.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AJAX calls</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/art-share.js"></script>
+	<script src="js/main.js"></script>
 
-	</head>
-	<body class="image">
+</head>
+<body class="image">
 
 	<div class='wrapper'>
+
+		<!-- http://www.wpbeginner.com/plugins/how-to-add-google-calendar-in-wordpress/ -->
+		<section class="calendar-container">
+		
+			<div id='content'>
+      			<h1>E</h1>
+			    <ul id='events'></ul>
+		    </div>
+
+	   		<a href='#' id='authorize-button' onclick='handleAuthClick();'>Login</a>
+		    
+		    <!-- <script>
+		      // Insert the JS from above, here.
+		    </script> -->
+    
+
+			<!-- this would be the calendar for SJPW.com's account, embedded. -->
+			<div class="calendar">
+				
+				<iframe src="https://calendar.google.com/calendar/embed?src=amy%40amyeckertprojects.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				
+			</div>
+		</section>		
+
 		<form action="#" method="post" id="sign-up">
 			<h2>Sign up!</h2>
 
@@ -64,5 +88,5 @@
 
 	</div> <!-- close wrapper -->
 
-	</body>
+</body>
 </html>
